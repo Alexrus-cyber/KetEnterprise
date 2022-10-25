@@ -1,0 +1,11 @@
+.container{
+    width: 1600px;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    height: 100vh;
+}
+.welcome{
+    display: inline-block;
+
+}
