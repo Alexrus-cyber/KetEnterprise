@@ -6,6 +6,7 @@ export const Landing = () => {
     return (
         <div className={styles.Landing}>
                 <WelcomePage/>
+
         </div>
     )
 }

@@ -3,11 +3,11 @@ import {Header} from "./Components/Header/Header";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Landing} from "./Components/Landing/Landing";
 
-function App() {
+function App(props) {
   return (
       <BrowserRouter>
           <div className="App">
-              <Header/>
+              <Header />
               <Routes>
                   <Route path={'/'} element={<Landing/>}></Route>
               </Routes>
