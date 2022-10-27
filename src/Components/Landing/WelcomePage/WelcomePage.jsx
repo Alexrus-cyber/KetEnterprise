@@ -27,19 +27,22 @@ export const WelcomePage = () => {
             <div className={styles.container} >
                 <div className={styles.welcome} ref={ref}>
                         <div className={styles.superTitle}> {/*Первый заголовок*/}
-                            <Title/>
-                        <div className={styles.buttonContainer + ' ' + styles.flex}>
-                            <p className={styles.p}>
-                                КЭТ — это серьёзная профессиональная подготовка и
-                                разносторонняя студенческая жизнь, это лекции, семинары и
-                                практика на предприятиях Костромы, Костромской и Московской областей.
-                            </p>
-                        </div>
-                            <div className={styles.buttonContainer}>
-                                <a style={{textDecoration: "none", color: "white"}} href={'http://spo-ket.ru/'}>  <button className={styles.button}>Вернуться на основной сайт</button></a>
+                            <div style={{display: "inline-block"}}>
+                                <Title/>
+                                <div className={styles.buttonContainer + ' ' + styles.flex}>
+                                    <p className={styles.p}>
+                                        КЭТ — это серьёзная профессиональная подготовка и
+                                        разносторонняя студенческая жизнь, это лекции, семинары и
+                                        практика на предприятиях Костромы, Костромской и Московской областей.
+                                    </p>
+                                </div>
+                                <div className={styles.buttonContainer}>
+                                    <a style={{textDecoration: "none", color: "white"}} href={'http://spo-ket.ru/'}>  <button className={styles.button}>Вернуться на основной сайт</button></a>
+                                </div>
                             </div>
+
                     </div>
-                        <div className={styles.second}> {/*Второй Галлерея*/}
+                        <div className={styles.second + ' ' + styles.center}> {/*Второй Галлерея*/}
                             <div ref={refTable} className={styles.flex}>
                                 <div className={styles.inlineBlock}>
                                     <div className={styles.imageLap}>
@@ -58,7 +61,9 @@ export const WelcomePage = () => {
                             <div ref={refPhone} className={styles.flex}>
                                 <div className={styles.inlineBlock}>
                                     <div className={styles.imageContainerPhone + ' ' + styles.flex}>
-                                        <div className={styles.inlineBlock}>
+                                        <div style={{
+                                            margin: "auto"
+                                        }} className={styles.inlineBlock}>
                                             <img className={styles.imagePhone} src={image2} alt={''}/>
                                             <div className={styles.circleC}>
                                                 <div className={styles.circle}></div>
@@ -71,7 +76,10 @@ export const WelcomePage = () => {
                         </div>
                         <div className={styles.third + ' '+ styles.flex + ' ' + styles.thirdH1}>
                             <div className={styles.thirdContainer}>
-                                <h1> КЭТ — это медаль «Европейское качество» и победа в конкурсе «100 лучших ссузов России».</h1>
+                                <h1>
+                                    <span className={styles.span}> КЭТ — это медаль «Европейское качество» и победа в конкурсе «100 лучших ссузов России».</span>
+                                </h1>
+
                             </div>
 
                         </div>
