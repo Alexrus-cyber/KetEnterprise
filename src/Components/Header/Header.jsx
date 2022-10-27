@@ -42,9 +42,7 @@ export const Header = (props) => {
                        <Dropdown linkName = {'Информация о техникуме'} linksPath = {'Profile2'}/>
                     </Nav>
                 </div>
-                <div style={{width: 256, height : 58.19, display: "flex", justifyContent: "right"}}>
-                    <button><NavLink to={'Profile'}><h1 className={styles.img} >User</h1></NavLink></button>
-                </div>
+
             </div>
         </Navbar>
     )
